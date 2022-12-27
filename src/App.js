@@ -138,6 +138,7 @@ function App() {
 
   return (
     <div className="App">
+      <p>
       Players: <input type='text' onChange={(e) => {
         const v =  e.target.value;
         if (+v > 0) {
@@ -145,7 +146,7 @@ function App() {
         } else {
           setPlayers(null);
         }
-      }} />
+      }} /></p>
       <div style={{display: 'flex', alignItems: 'center', textAlign: 'center'}}>
         <div style={{flex: 1}}><h2 style={{textDecoration: 'underline'}}>Name</h2></div>
         <div style={{flex: 1}}><h2 style={{textDecoration: 'underline'}}>Players</h2></div>
