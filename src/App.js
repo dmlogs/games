@@ -111,7 +111,6 @@ const games = [
     l: 2,
     h: 6
   },
-  ,
   {
     n: "Red7",
     l: 2,
