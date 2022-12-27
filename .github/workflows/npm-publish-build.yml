@@ -1,8 +1,9 @@
 name: npm publish build
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+    - main
 
 jobs:
   build:
