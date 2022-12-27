@@ -18,6 +18,8 @@ jobs:
           node-version: 16
       - run: npm install
       - run: npm run build
-      - uses: actions/upload-artifact@v3.1.1
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: build/*
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
