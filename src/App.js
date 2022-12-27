@@ -140,7 +140,8 @@ function App() {
     <div className="App">
       <p>
       Players: <input type='text' onChange={(e) => {
-        const v =  e.target.value;
+      
+      const v =  e.target.value;
         if (+v > 0) {
           setPlayers(+v);
         } else {
@@ -148,7 +149,7 @@ function App() {
         }
       }} /></p>
       <div style={{display: 'flex', alignItems: 'center', textAlign: 'center'}}>
-        <div style={{flex: 1}}><h2 style={{textDecoration: 'underline'}}>Name</h2></div>
+        <div style={{flex: 3}}><h2 style={{textDecoration: 'underline'}}>Name</h2></div>
         <div style={{flex: 1}}><h2 style={{textDecoration: 'underline'}}>Players</h2></div>
       </div>
       {games.filter(g => {
@@ -163,7 +164,7 @@ function App() {
         return true;
       }).map(g => {
         return (<div style={{display: 'flex', alignItems: 'center', textAlign: 'center'}}>
-          <div style={{flex: 1}}><h3>{g.n}</h3></div>
+          <div style={{flex: 3, paddingLeft: '1em', textAlign: 'left' }}><h3>{g.n}</h3></div>
           <div style={{flex: 1}}>{g.l}{g.l && g.h && " - "}{g.h}</div>
         </div>)
       })}
