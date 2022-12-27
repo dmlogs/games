@@ -156,7 +156,7 @@ function App() {
           return players >= g.l.replace(/\D/g,'') 
         }
 
-        if (players && players < g.l || players > g.h) {
+        if (players && (players < g.l || players > g.h)) {
           return false;
         }
 
