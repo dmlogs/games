@@ -23,6 +23,11 @@ const games = [
     h: 4
   },
   {
+    n: "Exploding Kittens",
+    l: 2,
+    h: 5
+  },
+  {
     n: "Unstable Unicorns",
     l: 2,
     h: 8
